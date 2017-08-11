@@ -1,0 +1,27 @@
+#v1{
+	width: 200px;
+	height: 20px;
+	border:1px solid red;
+	background-color: pink;
+
+}
+#v2{
+	width: 200px;
+	height: 20px;
+	background-color: skyblue;
+}
+#res{
+	width: 200px;
+	height: 20px;
+	background-color: red;
+}
+#bg{
+	width: 300px;
+	height: 200px;
+	background-image: url(../imgs/logo.png);
+}
+#bg1{
+	width: 300px;
+	height: 200px;
+	background-image: url(../imgs/bg.png);
+}
