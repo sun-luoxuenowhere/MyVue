@@ -1,15 +1,30 @@
-var v1 = document.getElementById("v1");
-var v2 = document.getElementById("v2");
-var btn = document.getElementById("btn");
-var res = document.getElementById("res");
-// 引入add方法
-// var add = require("./calc.js");
- import add from "./calc.js";
-import"../statics/css/site.css";
-import"../statics/css/site1.scss";
-import"../statics/css/site2.less";
-btn.onclick = function() {
-    var v1value = parseFloat(v1.value);
-    var v2value = parseFloat(v2.value);
-    res.value = add(v1value, v2value);
-}
+import Vue from "vue";
+import App from "./App.vue";
+
+import '../statics/mui/css/mui.css';
+
+
+import  mintui from 'mint-ui';
+Vue.use(mintui);
+import 'mint-ui/lib/style.css'
+
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+import login from './component/login.vue'
+import register from './component/register.vue'
+var router1 = new VueRouter({
+	routes:[
+		{path:'/login',component:login},
+		{path:'/register',component:register}
+	]
+})
+new Vue({
+	el:"#app",
+	// render:function(create){
+	// 	create(App)
+	// }
+	router : router1,
+	render:c=>c(App)
+
+})
+
