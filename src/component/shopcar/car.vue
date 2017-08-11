@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<span   class = "red">注册----璐璐姐 </span>
+	<div id="temp">
+		<span   class = "red">购物车 </span>
 	</div>
 </template>
 <script>

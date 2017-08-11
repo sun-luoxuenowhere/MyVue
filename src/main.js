@@ -11,14 +11,15 @@ import '../statics/mui/css/icons-extra.css'
 
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
-import login from './component/login.vue'
-import register from './component/register.vue'
+import home from './component/home.vue'
+import car from './component/shopcar/car.vue'
 
 import '../statics/css/site.css'
 var router1 = new VueRouter({
+	linkActiveClass:"mui-active",
 	routes:[
-		{path:'/login',component:login},
-		{path:'/register',component:register}
+		{path:'/home',component:home},
+		{path:'/car',component:car}
 	]
 })
 new Vue({
