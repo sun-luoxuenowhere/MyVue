@@ -7,11 +7,14 @@ import '../statics/mui/css/mui.css';
 import  mintui from 'mint-ui';
 Vue.use(mintui);
 import 'mint-ui/lib/style.css'
+import '../statics/mui/css/icons-extra.css'
 
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 import login from './component/login.vue'
 import register from './component/register.vue'
+
+import '../statics/css/site.css'
 var router1 = new VueRouter({
 	routes:[
 		{path:'/login',component:login},

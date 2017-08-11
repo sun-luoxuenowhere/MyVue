@@ -68,20 +68,22 @@ module.exports = {
         }, {
             test: /\.(png|jpg|gif|ttf)$/,
             loader: 'url-loader?limit=40000'
-        }, {
-            test:/\.js$/,
-            loader:"babel-loader",
-            exclude:/node_modules/
-        }, {
+        },
+        //  {
+        //     test:/\.js$/,
+        //     loader:"babel-loader",
+        //     exclude:/node_modules/
+        // },
+         {
             test:/\.vue$/,
             loader:"vue-loader"
         }
       ]
     },
-    babel:{
-      presets:["es2015"],
-      plugins:["transform-runtime"]
-    },
+    // babel:{
+    //   presets:["es2015"],
+    //   plugins:["transform-runtime"]
+    // },
     plugins: [
         new htmlwp({
             title: '首页',
