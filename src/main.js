@@ -11,15 +11,24 @@ import '../statics/mui/css/icons-extra.css'
 
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
+import vueresource from 'vue-resource';
+Vue.use(vueresource);
+
 import home from './component/home.vue'
 import car from './component/shopcar/car.vue'
+import newslist from './component/news/newslist.vue'
+import newsinfo from './component/news/newsinfo.vue'
+import photolist from './component/photo/photolist.vue'
 
 import '../statics/css/site.css'
 var router1 = new VueRouter({
 	linkActiveClass:"mui-active",
 	routes:[
 		{path:'/home',component:home},
-		{path:'/car',component:car}
+		{path:'/news/newslist',component:newslist},
+		{path:'/news/newsinfo/:id',component:newsinfo},
+		{path:'/photo/photolist',component:photolist}
+		
 	]
 })
 new Vue({
