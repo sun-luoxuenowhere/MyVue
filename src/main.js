@@ -24,6 +24,7 @@ import '../statics/css/site.css'
 var router1 = new VueRouter({
 	linkActiveClass:"mui-active",
 	routes:[
+		{path:'/',redirect:'/home'},
 		{path:'/home',component:home},
 		{path:'/news/newslist',component:newslist},
 		{path:'/news/newsinfo/:id',component:newsinfo},
