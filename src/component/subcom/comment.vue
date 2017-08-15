@@ -11,7 +11,7 @@
 			<ul class="mui-table-view" >
 				 <li class="mui-table-view-cell" v-for="item in list">
 				 	<span>{{item.user_name}}</span>
-				 	<p>{{item.user_name}}</p>
+				 	<p>{{item.add_time}}</p>
 				 	<p style="height:20px" v-text='item.content'></p>
 				 </li>
 		        
